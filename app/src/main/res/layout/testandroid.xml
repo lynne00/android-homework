@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="安卓试题"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一.单选题"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.关于线程说法不正确的是?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在 android 中，我们可以在主线程中，创建一个新的线程" />
+
+            <RadioButton
+                android:id="@+id/zq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在创建的新线程中，它可以操作 UI 组件" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新线程可以和 Handler 共同使用" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="创建的 Handler 对象，它隶属于创建它的线程" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.Android是如何组织Activity的？" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="以堆的方式组织Activity" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="以树形方式组织Activity" />
+
+            <RadioButton
+                android:id="@+id/zq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="以栈的方式组织Activity" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="以链式方式组织Activity" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.在android中使用RadioButton时，要想实现互斥的选择需要用的组件是？" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ButtonGroup" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButtons" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+
+            <RadioButton
+                android:id="@+id/zq3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioGroup" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.下列用以显示一系列图像的是？" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ImageView" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GridView" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ImageSwitcher" />
+
+            <RadioButton
+                android:id="@+id/zq4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二.多选题"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.Intent 传递数据时，下列的数据类型哪些可以被传递" />
+
+            <CheckBox
+                android:id="@+id/zq5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serializable" />
+
+            <CheckBox
+                android:id="@+id/zq6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="charsequence" />
+
+            <CheckBox
+                android:id="@+id/zq7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parcelable" />
+
+            <CheckBox
+                android:id="@+id/zq8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bundle" />
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"/>
+        <Button
+            android:id="@+id/tc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

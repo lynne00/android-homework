@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/zhongxin">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/rl1">
+           <ImageView
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_marginLeft="5dp"
+               android:src="@drawable/yonghu"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/zh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号："
+                    android:textSize="35dp"/>
+                <TextView
+                    android:id="@+id/t_zh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/zh"
+                    android:text="*******"
+                    android:textSize="35dp"
+                    />
+                />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl1"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/sczp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="#FFFFFF"
+                android:text="上传照片" />
+
+            <Button
+                android:id="@+id/xgzl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:text="修改资料" />
+            <Button
+                android:id="@+id/cxcj"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="#FFFFFF"
+                android:text="查询成绩" />
+
+            <Button
+                android:id="@+id/tcdl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:text="退出登录" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
